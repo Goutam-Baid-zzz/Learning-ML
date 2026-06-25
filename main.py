@@ -1,7 +1,9 @@
+#practice
+
 import pandas as pd
-url = 'https://raw.githubauercentent.com/rajendra0968jangid/Ds-Arya/main/student-data.json'
-df = pd.read_json(ur1)
-df
+
+url = "https://raw.githubusercontent.com/rajendra0968jangid/Ds-Arya/main/student-data.json"
+df = pd.read_json(url)
 
 print("\nHead")
 print(df.head())
@@ -25,5 +27,5 @@ print("\nData Types")
 print(df.dtypes)
 
 print("\nRename Column")
-df.rename(columns={'name':'student_name'}, inplane=True)
+df.rename(columns={'name': 'student_name'}, inplace=True)
 print(df.head())
